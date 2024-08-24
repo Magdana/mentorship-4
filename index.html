@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <img
+          srcset="images/image-product-desktop.jpg 600w 
+          images/image-product-mobile.jpg 700w"
+          alt="parfume picture"
+          src="./images/image-product-desktop.jpg"
+          sizes="(max-width: 600px) 100vw, 300px"
+        />
+        <div class="product__description">
+          <p class="category">perfume</p>
+          <h1 class="title">Gabirelle essence eau de parfum</h1>
+          <p class="description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+
+          <div class="prices">
+            <span class="sale-price">$149.99</span>
+            <span class="price">$169.99</span>
+          </div>
+          <button>
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>add to cart
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
